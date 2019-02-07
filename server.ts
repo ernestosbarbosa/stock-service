@@ -2,7 +2,7 @@ import * as express from 'express';
 import { StockController } from './controllers';
 
 const app: express.Application = express();
-const port: number = 2345;
+const port = process.env.PORT || 2345;
 
 app.use('/', StockController);
 
