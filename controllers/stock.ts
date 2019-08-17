@@ -33,7 +33,7 @@ router.get('/:bookId', (req: Request, res: Response) => {
     // if (!availability) {
     //     return res.status(404).send();
     // }
-    return res.status(200).send(availability);
+    return res.status(200).send();
 });
 
 router.post('/', (req: Request, res: Response) => {
